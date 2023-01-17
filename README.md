@@ -8,7 +8,7 @@ Step to make your directory listing more beauty
 
 ```bash
   1. Download index.php
-  2. Upload index.php to the spesific directory of your website
+  2. Upload index.php to spesific directory of your website
 ```
 
 ## 📸 Preview
