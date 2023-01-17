@@ -29,7 +29,7 @@ if ($directory == "/") {
 <html>
 
 <head>
-    <title>Dokumen Lister</title>
+    <title>Directory Lister</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
@@ -37,7 +37,7 @@ if ($directory == "/") {
 <body>
     <div class="container">
         <br>
-        <h1 class="text-center">Document Lister</h1>
+        <h1 class="text-center">Directory Lister</h1>
         <br>
         <br>
         <table class="table table-hover">
