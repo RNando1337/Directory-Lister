@@ -17,5 +17,5 @@ Step to make your directory listing more beauty
   <strong>This look of the Directory Lister</strong>
 </p>
 
-## 💻 Coded Used
+## 💻 Code Used
 [<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white) [<img src="https://img.shields.io/badge/PHP-802fa1?style=for-the-badge&logo=PHP&logoColor=white"/>](https://img.shields.io/badge/PHP-7A86B8?style=for-the-badge&logo=PHP&logoColor=white) [<img src="https://img.shields.io/badge/Bootstrap-795da3?style=for-the-badge&logo=Bootstrap&logoColor=white"/>](https://img.shields.io/badge/Bootstrap-795da3?style=for-the-badge&logo=Bootstrap&logoColor=white)
