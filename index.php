@@ -15,8 +15,13 @@ $directory = (@$_GET['dir'] != "") ? $_GET['dir'] : "/";
 $pathFile = explode("?dir=", $_SERVER["REQUEST_URI"]);
 
 $currentDir = __DIR__ . $directory . "/";
+$tempDir = $currentDir;
 
-$listDir = scandir($currentDir);
+if (is_dir($currentDir)) {
+    $listDir = scandir($currentDir);
+} else {
+    header("Location:" . $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . $pathFile[0] . "?dir=/", false, 302);
+}
 
 if ($directory == "/") {
     $files = array_diff($listDir, [".", "..", "index.php"]);
