@@ -15,7 +15,6 @@ $directory = (@$_GET['dir'] != "") ? $_GET['dir'] : "/";
 $pathFile = explode("?dir=", $_SERVER["REQUEST_URI"]);
 
 $currentDir = __DIR__ . $directory . "/";
-$tempDir = $currentDir;
 
 if (is_dir($currentDir)) {
     $listDir = scandir($currentDir);
