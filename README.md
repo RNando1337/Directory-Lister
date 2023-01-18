@@ -21,7 +21,7 @@ Step to make your directory listing more beauty
 $ignoringFileDirs = ["directory1", "directory2", "etc.."];
 ```
 
-<p>If you want to ignoring spesific file you can fill <b>ignoringExtensions</b> variable in index.php</p>
+<p>If you want to ignoring spesific file extensions you can fill <b>ignoringExtensions</b> variable in index.php</p>
 <p>
   <img src="https://user-images.githubusercontent.com/60562868/213088666-09d91e0c-2486-4cac-bbe3-547204dbf4d9.png">
 </p>
