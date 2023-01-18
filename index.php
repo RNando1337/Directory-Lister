@@ -18,7 +18,7 @@ $pathFile = explode("?dir=", $_SERVER["REQUEST_URI"]);
 
 $currentDir = __DIR__ . $directory . "/";
 
-$mergeIgnoring = array_merge($ignoringFileDirs, $Extensions = glob("*.{" . $ignoringExtensions . "}", GLOB_BRACE));
+$mergeIgnoring = array_merge($ignoringFileDirs, glob("*.{" . $ignoringExtensions . "}", GLOB_BRACE));
 
 if (is_dir($currentDir)) {
     $listDir = scandir($currentDir);
