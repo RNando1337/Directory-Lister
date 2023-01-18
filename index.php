@@ -1,7 +1,7 @@
 <?php
 
-$ignoringFileDirs = [".git"];
-$ignoringExtensions = "md,pdf";
+$ignoringFileDirs = [""];
+$ignoringExtensions = "";
 
 if (array_key_exists("dir", $_GET) && empty($_GET['dir'])) {
     header("Location:" . $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . $_SERVER["REQUEST_URI"] . "/", false, 302);
