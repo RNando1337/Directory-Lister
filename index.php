@@ -1,11 +1,13 @@
 <?php
 
+$ignoringFileDirs = [".git"];
+$ignoringExtensions = "md,pdf";
+
 if (array_key_exists("dir", $_GET) && empty($_GET['dir'])) {
     header("Location:" . $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . $_SERVER["REQUEST_URI"] . "/", false, 302);
 } elseif (empty($_SERVER['QUERY_STRING'])) {
     header("Location:" . $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'] . $_SERVER["REQUEST_URI"] . "?dir=/", false, 302);
 }
-
 
 if (preg_match("/(?:(\.\.))/", $_GET['dir']))
     die("Unauthorized");
@@ -16,6 +18,8 @@ $pathFile = explode("?dir=", $_SERVER["REQUEST_URI"]);
 
 $currentDir = __DIR__ . $directory . "/";
 
+$mergeIgnoring = array_merge($ignoringFileDirs, $Extensions = glob("*.{" . $ignoringExtensions . "}", GLOB_BRACE));
+
 if (is_dir($currentDir)) {
     $listDir = scandir($currentDir);
 } else {
@@ -23,10 +27,11 @@ if (is_dir($currentDir)) {
 }
 
 if ($directory == "/") {
-    $files = array_diff($listDir, [".", "..", "index.php"]);
+    $files = array_diff($listDir, array_merge($mergeIgnoring, [".", "..", "index.php"]));
 } else {
-    $files = array_diff($listDir, [".", "index.php"]);
+    $files = array_diff($listDir, array_merge($mergeIgnoring, [".", "index.php"]));
 }
+
 ?>
 
 <!DOCTYPE html>
