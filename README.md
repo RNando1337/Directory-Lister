@@ -6,7 +6,7 @@ Directory Lister is a program that creates a more visually appealing and user-fr
 
 Step to make your directory listing more beauty
 
-```bash
+```
   1. Download index.php
   2. Upload index.php to spesific directory of your website
 ```
@@ -16,7 +16,8 @@ Step to make your directory listing more beauty
   <img src="https://user-images.githubusercontent.com/60562868/213088462-c42db115-a07e-4f6a-b239-3261dbe7325c.png">
 </p>
 <p>Example :</p> 
-```bash
+
+```
 $ignoringFileDirs = ["directory1", "directory2", "etc.."];
 ```
 
@@ -25,7 +26,8 @@ $ignoringFileDirs = ["directory1", "directory2", "etc.."];
   <img src="https://user-images.githubusercontent.com/60562868/213088666-09d91e0c-2486-4cac-bbe3-547204dbf4d9.png">
 </p>
 <p>Example : </p>
-```bash
+
+```
 $ignoringExtensions = "png,pdf,php,txt";
 ```
 
