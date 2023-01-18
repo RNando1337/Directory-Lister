@@ -11,16 +11,16 @@ Step to make your directory listing more beauty
   2. Upload index.php to spesific directory of your website
 ```
 
-If you want to ignoring spesific dir you can fill <b>ignoringFileDirs</b> variable in index.php
-![gambar](https://user-images.githubusercontent.com/60562868/213088462-c42db115-a07e-4f6a-b239-3261dbe7325c.png)
-Example : 
+<p>If you want to ignoring spesific dir you can fill <b>ignoringFileDirs</b> variable in index.php</p>
+<p>![gambar](https://user-images.githubusercontent.com/60562868/213088462-c42db115-a07e-4f6a-b239-3261dbe7325c.png)</p>
+<p>Example :</p> 
 ```bash
 $ignoringFileDirs = ["directory1", "directory2", "etc.."];
 ```
 
-If you want to ignoring spesific file you can fill <b>ignoringExtensions</b> variable in index.php
-![gambar](https://user-images.githubusercontent.com/60562868/213088666-09d91e0c-2486-4cac-bbe3-547204dbf4d9.png)
-Example : 
+<p>If you want to ignoring spesific file you can fill <b>ignoringExtensions</b> variable in index.php</p>
+<p>![gambar](https://user-images.githubusercontent.com/60562868/213088666-09d91e0c-2486-4cac-bbe3-547204dbf4d9.png)</p>
+<p>Example : </p>
 ```bash
 $ignoringExtensions = "png,pdf,php,txt";
 ```
