@@ -11,14 +11,14 @@ Step to make your directory listing more beauty
   2. Upload index.php to spesific directory of your website
 ```
 
-<p>If you want to ignoring spesific dir you can fill <b>ignoringFileDirs</b> variable in index.php</p>
+<p>If you want to ignoring spesific file/directory you can fill <b>ignoringFileDirs</b> variable in index.php</p>
 <p>
   <img src="https://user-images.githubusercontent.com/60562868/213088462-c42db115-a07e-4f6a-b239-3261dbe7325c.png">
 </p>
 <p>Example :</p> 
 
 ```
-$ignoringFileDirs = ["directory1", "directory2", "etc.."];
+$ignoringFileDirs = ["directory1", "directory2", "file1.txt", "file2.txt", "etc.."];
 ```
 
 <p>If you want to ignoring spesific file extensions you can fill <b>ignoringExtensions</b> variable in index.php</p>
